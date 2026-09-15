@@ -1,6 +1,7 @@
 {
     "ml": {
         "ollama_model": "",
+        "repair_model": ""
     },
     "channels": {
         "emploiDuTemps": "",
@@ -14,10 +15,24 @@
         "mathTeacher": ""
     },
     "mathTeacher": "",
-    "citations": [{ "citation": "citation example", "author": "- citation author" }],
+    "citations": [
+        {
+            "citation": "citation example",
+            "author": "- citation author"
+        }
+    ],
     "emploiDuTemps": {
         "A": {
-            "Monday": [{ "name": "course", "start": "08:00", "end": "10:00", "group": "group1/group2/other", "class": "classroom", "color": "display color" }],
+            "Monday": [
+                {
+                    "name": "course",
+                    "start": "08:00",
+                    "end": "10:00",
+                    "group": "group1/group2/other",
+                    "class": "classroom",
+                    "color": "display color"
+                }
+            ],
             "Tuesday": [],
             "Wednesday": [],
             "Thursday": [],
