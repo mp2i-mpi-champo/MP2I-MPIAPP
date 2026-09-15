@@ -156,6 +156,12 @@ class EmploiDuTemps {
                 case 'optinfo':
                     group = 'Opt Info';
                     break;
+                case 'MPI':
+                    group = 'MPI';
+                    break;
+                case 'MPI*':
+                    group = 'MPI*';
+                    break;
             }
 
 	        if(group && endH - startH === 1) {
@@ -314,7 +320,7 @@ class EmploiDuTemps {
                 }
             }
 
-            const imageBuffer = await this.getWeekImageBuffer(week);
+            const imageBuffer = await this.getWeekImageBuffer(week === 'A' ? 'B' : 'A');
             const attachment = new AttachmentBuilder(imageBuffer, { name: 'emploi_du_temps.png' });
 
             if (this.weeklyEmbedMessageId) {
